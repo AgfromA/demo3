@@ -24,7 +24,7 @@ public class UserSecurity implements UserDetailsService {
         if (user == null) {
             throw new UsernameNotFoundException(String.format("User '%s' not found", username));
         }
-        return new User(user.getId(), user.getUsername(),user.getPassword(), user.getEmail(), user.getRoles(), user.getLastname(),  user.getAge());
+        return new User(user.getId(), user.getUsername(), user.getPassword(), user.getEmail(), user.getRoles(), user.getLastname(), user.getAge());
     }
 
 }

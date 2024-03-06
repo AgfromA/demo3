@@ -174,6 +174,6 @@ public class User implements UserDetails {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, username, password,lastname,age, email, roles);
+        return Objects.hash(id, username, password, lastname, age, email, roles);
     }
 }
